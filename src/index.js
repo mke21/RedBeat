@@ -10,7 +10,7 @@ var Intro = require("./views/Intro")
 var Band = require("./views/Band.js")
 var SetList = require("./views/SetList")
 var BandLeden = require("./views/BandLeden.js")
-
+var Fotos = require("./views/Fotos.js")
 
 m.route(document.body, '/home', {
     "/home": {
@@ -35,12 +35,7 @@ m.route(document.body, '/home', {
     },
     "/fotos": {
         render: function(){
-            return m(Layout, m(UserList))
-        }
-    },
-    "/contact": {
-        render: function(){
-            return m(Layout, m(UserList))
+            return m(Layout, m(Fotos))
         }
     },
 })
