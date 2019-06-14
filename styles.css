@@ -16,11 +16,11 @@ nav {
     list-style-type:none;
     margin:0;
     padding:0;
+    text-align: center;
 }
 /*Create a horizontal list with spacing*/
 .menuitem {
     display:inline-block;
-    float: left;
     margin-right: 1px;
 }
 /*Style for menu links*/
@@ -33,11 +33,14 @@ nav {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     text-decoration: none;
-    background-color: rgba(0,0,0,.5);;
+    background-color: rgba(0,0,0,.5);
+}
+.current {
+    background: rgba(200,200,200, .1);
 }
 /*Hover state for top level links*/
 .menuitem:hover a {
-    background: #19c589;
+    background: rgba(200,200,200, .1);
 }
 /*Style for dropdown links*/
 .menuitem:hover ul a {
@@ -48,7 +51,7 @@ nav {
 }
 /*Hover state for dropdown links*/
 .menuitem:hover ul a:hover {
-    background: #19c589;
+    background: rgba(200,200,200, .1);
     color: #fff;
 }
 /*Hide dropdown links until they are needed*/
@@ -107,13 +110,20 @@ ul li a:hover + .hidden, .hidden:hover {
     .show-menu {
         display:block;
     }
+    .menuitem {
+        float: left;
+    }
+    
 }
 
 .intro {
-    width: 100vw; 
-    height: 53.25vw;
+    width: 100%;
+    height: calc(100vh - 4em);
+    box-sizing: border-box;
     background-image: url('/images/intro.jpg');
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 }   
 .content {
     top: 3em;
@@ -134,6 +144,15 @@ h1{
     text-align: middle;
     margin: auto; /*auto centers the container */
 }
+.linklist{
+    list-style-type:none;
+}
+
+.linklist li {
+    display: inline-block;
+    padding: 1em;
+}
+
 /*CSS3 multiple columns.*/
 /* Get em size for colums: 184/16 */   
 .setlist
