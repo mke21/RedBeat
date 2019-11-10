@@ -35,7 +35,7 @@ m.route(document.body, '/home', {
     },
     "/fotos": {
         render: function(){
-            return m(Layout, m(Fotos))
+            return m(Layout, m(InnerLayout, m(Fotos)))
         }
     },
 })

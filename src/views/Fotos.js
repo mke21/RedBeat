@@ -1,30 +1,17 @@
 // src/views/Fotos.js
-var m = require("mithril").default
-import { slider } from 'mithril-slider';
+var m = require("mithril").default;
+var Images = require("../models/Images");
+var src = "";
 
-export default {
+
+module.exports = {
+	oninit: Images.loadList,
     view: function(){
         return [
-            m("h1", "Foto's"),
-            m(slider, {
-                pageData: () => {
-                    m.request({
-                        method: 'GET',
-                        url: '/data/images.json',
-                        background: false
-                    })
-                },
-                page: () => {
-                    const currentIndex = opts.currentIndex;
-                    const listIndex = opts.listIndex;
-                    const data = opts.data;
-                    const style = (Math.abs(currentIndex - listIndex) < 2)
-                          ? { backgroundImage: `url(${data})` }
-                          : null;
-                    return m('.page', {
-                        style: style
-                    });}
-            })
+          m("h1", "Fotos"),
+          m("img", {src: "/images/slider/" + Images.current, style: "max-width:100%"} ),
+					m("button", {onclick: function() {src = Images.next()} }, "next"),
+					m("button", {onclick: function() {src = Images.previous()}}, "previous")
         ]
     }
 }
