@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "start": "webpack src/index.js --output bin/app.js -d --watch"
   },
   "keywords": [],
   "author": "",

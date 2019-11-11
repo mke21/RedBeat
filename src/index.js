@@ -10,7 +10,7 @@ var Intro = require("./views/Intro")
 var Band = require("./views/Band.js")
 var SetList = require("./views/SetList")
 var BandLeden = require("./views/BandLeden.js")
-var Fotos = require("./views/Fotos.js")
+var Multimedia = require("./views/Multimedia.js")
 
 m.route(document.body, '/home', {
     "/home": {
@@ -33,9 +33,9 @@ m.route(document.body, '/home', {
             return m(Layout, m(InnerLayout, m(SetList)))
         }
     },
-    "/fotos": {
+    "/multimedia": {
         render: function(){
-            return m(Layout, m(InnerLayout, m(Fotos)))
+            return m(Layout, m(InnerLayout, m(Multimedia)))
         }
     },
 })
