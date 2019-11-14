@@ -1,8 +1,8 @@
 // src/views/SetList.js
-var m = require("mithril").default
-var SetList = require("../models/SetList")
+import m from "mithril";
+var SetList = require("../models/SetList").default;
 
-module.exports = {
+export default {
     oninit: SetList.loadList,
     view: function() {
         return [

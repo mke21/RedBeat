@@ -1,7 +1,7 @@
 // src/views/BandLeden.js
-var m = require("mithril").default
+import m from "mithril";
 
-module.exports = {
+export default {
     view: function() {
         return [
             m("h1", "De Bandleden"),

@@ -1,9 +1,9 @@
 // src/views/Multimedia.js
-var m = require("mithril").default;
-var Fotos = require("./Fotos");
-var Music = require("./Mp3");
+import m from "mithril";
+var Fotos = require("./Fotos").default;
+var Music = require("./Mp3").default;
 
-module.exports = {
+export default {
     view: function(){
         return [
 					m(Fotos),

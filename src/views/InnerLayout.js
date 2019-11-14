@@ -1,7 +1,7 @@
 // src/views/InnerLayout.js
-var m = require("mithril").default
+import m from "mithril";
 
-module.exports = {
+export default {
     view: function(vnode) {
         return m(".content",
                  m("div", {id: "content"}, vnode.children)

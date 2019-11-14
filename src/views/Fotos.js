@@ -1,10 +1,9 @@
 // src/views/Fotos.js
-var m = require("mithril").default;
-var Images = require("../models/Images");
+import m from "mithril";
+var Images = require("../models/Images").default;
 var src = "";
 
-
-module.exports = {
+export default {
 	oninit: Images.loadList,
     view: function(){
         return [

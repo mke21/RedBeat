@@ -1,5 +1,5 @@
 // src/models/Images.js
-var m = require("mithril").default
+import m from "mithril";
 
 var Images = {
     list: [],
@@ -38,4 +38,4 @@ var Images = {
 
 }
 
-module.exports = Images;
+export default Images;
