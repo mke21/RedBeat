@@ -1,6 +1,6 @@
 // src/index.js
-//var m = require("mithril").default
-import m from "mithril";
+var m = require("mithril");
+//import m from "mithril";
 var Layout = require("./views/Layout").default;
 var InnerLayout = require("./views/InnerLayout").default;
 var Intro = require("./views/Intro").default;

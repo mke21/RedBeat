@@ -6,7 +6,8 @@ export default {
     view: function(){
         return [
           m("h1", "Demo"),
-					m("audio", {controls: true}, [
+					m("figcaption", 'All over you (2019)'),
+					m("audio", {id: "demo1", controls: true}, [
 						m('source', {src:"music/" +music, type: "audio/mpeg"})
 					])
         ]
