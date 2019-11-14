@@ -11,8 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mithril": "^2.0.0-rc.4",
-    "mithril-slider": "^1.1.0"
+    "mithril": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "webpack": "^4.30.0",
