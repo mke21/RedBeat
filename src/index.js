@@ -1,16 +1,13 @@
 // src/index.js
-var m = require("mithril").default
-
-var UserList = require("./views/UserList")
-var UserForm = require("./views/UserForm")
-var Layout = require("./views/Layout")
-var InnerLayout = require("./views/InnerLayout")
-var Intro = require("./views/Intro")
-
-var Band = require("./views/Band.js")
-var SetList = require("./views/SetList")
-var BandLeden = require("./views/BandLeden.js")
-var Multimedia = require("./views/Multimedia.js")
+//var m = require("mithril").default
+import m from "mithril";
+var Layout = require("./views/Layout").default;
+var InnerLayout = require("./views/InnerLayout").default;
+var Intro = require("./views/Intro").default;
+var Band = require("./views/Band.js").default;
+var SetList = require("./views/SetList").default;
+var BandLeden = require("./views/BandLeden.js").default;
+var Multimedia = require("./views/Multimedia.js").default;
 
 m.route(document.body, '/home', {
     "/home": {
@@ -37,5 +34,5 @@ m.route(document.body, '/home', {
         render: function(){
             return m(Layout, m(InnerLayout, m(Multimedia)))
         }
-    },
+    }
 })

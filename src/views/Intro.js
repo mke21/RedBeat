@@ -1,7 +1,8 @@
 // src/views/Intro
-var m=require("mithril").default
+//var m=require("mithril").default
+import m from "mithril";
 
-module.exports = {
+export default {
     view: function() {
         return m("header.intro", {}, "")
     }

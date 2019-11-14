@@ -1,5 +1,5 @@
 // src/models/SetList.js
-var m = require("mithril").default
+import m from "mithril";
 
 var SetList = {
     list: [],
@@ -15,5 +15,4 @@ var SetList = {
             })
     }
 }
-
-module.exports = SetList
+export default SetList;

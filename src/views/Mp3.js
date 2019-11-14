@@ -1,9 +1,8 @@
 // src/views/Fotos.js
-var m = require("mithril").default;
+import m from "mithril";
 var music = "05-All_Over_You.mp3";
 
-
-module.exports = {
+export default {
     view: function(){
         return [
           m("h1", "Demo"),
