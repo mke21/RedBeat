@@ -8,7 +8,7 @@ var Images = {
     loadList: function() {
         return m.request({
             method: "GET",
-            url: "/images/slider/images.json",
+            url: "/slider/images.json",
             withCredentials: true,
         })
         .then(function(result) {
