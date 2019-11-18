@@ -8,6 +8,7 @@ export default {
     view: function(){
         return [
 					m("div.container", [
+						m('h1', "Foto's"),
 						m("div.mySlides", {style: "with:100%;"}, [
 							m("img", {src: "/slider/" + Images.current, style: "max-width:100%"} ),
 						]),
