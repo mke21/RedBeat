@@ -5,8 +5,8 @@ export default {
     view: function(){
         return [
             m("h1", "Over ons"),
-            m("p", "RedBeat is een rockband met als basis Fijnaart. Wij spelen gitaar rock, van classic rock tot modern"),
-            m("p", "U kunt kontakt met ons opnemen via facebook"),
+					  m("p", "Rode bieten met stevige bite, wij zijn RedBeat! Een rock coverband uit West-Brabant. Wij spelen gitaar rock, van classic tot modern, van mainstream tot alternative. Met twee gitaren, bas, drum en zang: een garantie voor een avond volop genieten!"),
+            m("p", "U kunt contact met ons opnemen via facebook"),
             m("ul.linklist", [
                 m("li", m("a", {href: "https://www.facebook.com/RedBeatBand" ,target: "blank"},
                           m("img", {src: "/images/facebook.png"}))),
