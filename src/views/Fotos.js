@@ -7,8 +7,8 @@ export default {
 	oninit: Images.loadList,
     view: function(){
         return [
+				  m('h1', "Foto's"),
 					m("div.container", [
-						m('h1', "Foto's"),
 						m("div.mySlides", {style: "with:100%;"}, [
 							m("img", {src: "/slider/" + Images.current, style: "max-width:100%"} ),
 						]),
